@@ -304,10 +304,7 @@ class Responser implements ResponserInterface
             return;
         }
         
-        if ($this->messages() instanceof Arrayable) {
-            $this->storage->flash(self::STORAGE_MESSAGES_KEY, $this->messages()->toArray());   
-        }
-        
+        $this->storage->flash(self::STORAGE_MESSAGES_KEY, $this->messages()->toArray());
         $this->storage->flash(self::STORAGE_INPUT_KEY, $this->input);
     }
 }
