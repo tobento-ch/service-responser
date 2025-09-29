@@ -1,5 +1,6 @@
 {
     "name": "tobento/service-responser",
+    "version": "2.0",
     "type": "library",
     "description": "Providing PSR-7 response wrapper classes with simplified methods.",
     "keywords": [
@@ -22,27 +23,27 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.0",
-        "psr/http-message": "^1.0",
-        "psr/http-factory": "^1.0",
+        "php": ">=8.4",
+        "psr/http-message": "^2.0",
         "psr/http-server-handler": "^1.0",
         "psr/http-server-middleware": "^1.0",        
-        "tobento/service-message": "^1.0",
-        "tobento/service-support": "^1.0",
-        "tobento/service-filesystem": "^1.0"
+        "tobento/service-message": "^2.0",
+        "tobento/service-support": "^2.0",
+        "tobento/service-filesystem": "^2.0",
+        "psr/http-factory": "^1.1"
     },
     "suggest": {
         "tobento/service-view": "Renderer implementation for render response.",
         "tobento/service-session": "Storage implementation for flashing input and messages."
     },    
     "require-dev": {
-        "phpunit/phpunit": "^9.5",
-        "vimeo/psalm": "^4.0",
-        "nyholm/psr7": "^1.4",
-        "tobento/service-view": "^1.0",
-        "tobento/service-session": "^1.0",
-        "tobento/service-middleware": "^1.0",
-        "tobento/service-container": "^1.0"
+        "phpunit/phpunit": "^12.3",
+        "vimeo/psalm": "^6.13",
+        "nyholm/psr7": "^1.8",
+        "tobento/service-view": "^2.0",
+        "tobento/service-session": "^2.0",
+        "tobento/service-middleware": "^2.0",
+        "tobento/service-container": "^2.0"
     },
     "autoload": {
         "psr-4": {
