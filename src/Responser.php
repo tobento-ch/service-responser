@@ -262,7 +262,7 @@ class Responser implements ResponserInterface
             $data = $data->toArray();
         }
 
-        return json_encode($data);
+        return (string)json_encode($data);
     }
     
     /**
